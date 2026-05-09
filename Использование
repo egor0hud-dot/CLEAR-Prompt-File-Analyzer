@@ -1,0 +1,9 @@
+from clear_prompt_analyzer import build_prompt
+
+prompt = build_prompt(
+    filename="main.py",
+    file_type="python",
+    file_content="print(eval(input()))"
+)
+
+print(prompt)
